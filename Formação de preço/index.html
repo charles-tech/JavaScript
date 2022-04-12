@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formação de Preço
+  </title>
+  <script src="preco.js"></script>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <section>
+  <div class="form">
+    <form method="post" action="index2.html"><br>
+      <h1>Orçamento</h1><br>
+      <h2>Formação de Preço</h2><br><br>
+      <label>Nome do Produto:</label>
+      <input type="text" name="nome-produto" id="nome-produto" placeholder="Nome do Produto">
+      <label>Ciclo:</label>
+      <input type="number" name="ciclo" id="ciclo" placeholder="Ciclo">
+       <label>Cavidades:</label>
+       <input type="number" name="cavidade" id="cavidade" placeholder="Cavidades"><br><br>
+      <label>Nome da Matéria Prima:</label>
+      <select id="nome-materiaprima">
+        <option disabled selected value="0">-- Escolha a Matéria Prima --</option>
+        <option value="PP"> PP</option>
+        <option value="PS"> PS</option>
+        <option value="ABS"> ABS</option>
+    </select>
+    <label>Valor da Matéria Prima:</label>
+    <input type="number" name="valor-materiaprima" id="valor-materiaprima" placeholder="Valor da Matéria Prima">
+    <label>Peso Injetada:</label>
+    <input type="text" name="peso-peca" id="peso-peca" placeholder="Peso da Peça Injetada">
+    <label>Embalagen:</label>
+    <select id="embalagen">
+      <option disabled selected value="0">-- Escolha a Embalagen --</option>
+      <option value="Cx Papelão"> Cx Papelão</option>
+      <option value="Saco Plastico"> Saco Plastico</option>
+      <option value="Pallet"> Pallet</option>
+     </select><br><br>
+     <label>Quantidade de Peças por Embalagen:</label>
+     <input type="number" name="quantPecaEmbalagens" id="quantPecaEmbalagens" placeholder="Quantidade de Peças por Embalagen">
+     <label Embalagen:>Valor Embalagen:</label>
+     <input type="number" name="valor-embalagen" id="valor-embalagen" placeholder="Valor da Embalagen">
+     <label>Injetora:</label>
+     <select id="valor-injetora">
+      <option disabled selected value="0">-- Escolha a Ijetora --</option>
+      <option value="110"> R$110 - Injetora 90</option>
+      <option value="115"> R$115 - Injetora 100</option>
+      <option value="120"> R$120 - Injetora 200</option>
+      <option value="125"> R$125 - Injetora 250</option>
+      <option value="130"> R$130 - Injetora 260</option>
+      <option value="160"> R$160 - Injetora 460/470 </option>
+      <option value="200"> R$200 - Especial</option>
+  </select>
+      <br><br>
+      
+     
+      <input type="button" value="Calcular" onclick="calcularPreco()">
+
+      <!--Resultados-->
+        <div id="valor-calculado">
+        <p>
+        Valor da Peça:
+  
+        <sup>R$</sup><span id="valor-por-cabeca">0.00</span>
+      </p>
+      <p>
+    <sup>Nome: </sup><span id="nomePeca">Nome: </span>
+  </p>
+  
+    </div>
+    <!--resultados-->
+
+      
+      </form>
+      </div>
+    </section>
+</body>
+</html>

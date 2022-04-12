@@ -1,0 +1,78 @@
+  body {
+  font-family: Roboto;
+  background: -webkit-linear-gradient(to left, #0f9dc7, #0df1f1);
+  background: linear-gradient(to left, #0f9dc7, #0df1f1);
+  
+  }
+  *{
+    font-family: sans-serif;
+  }
+
+  section {
+  background: white;
+  border-radius: 10px;
+  padding: 50px;
+  width: 60x;
+  margin: auto;
+  box-shadow: 10px 5px 10px black;
+}
+  .form{
+    background: #d3d3d3;
+ 
+    
+    text-align: center;
+    border: 2px solid #069;
+    border-radius: 10px;
+    margin-top: 80px;
+  }
+  h1{
+    background: #069;
+  }
+  input,select{
+    border-radius: 10px;
+    height: 30px;
+    border:none;
+  }
+  input[type="submit"]{
+    cursor:pointer;
+    border-radius: 5px;
+    border: none;
+    width: 80px;
+    height: 35px;
+  }
+  input[type="button"]{
+    cursor:pointer;
+    border-radius: 5px;
+    border: none;
+    width: 80px;
+    height: 35px;
+  }
+
+  input[type="button"]:hover{
+    background:#069;
+    color:#fff;
+  }
+    #valor-calculado {
+      font-size: 30px;
+      margin-top: 5px;
+      text-align: center;
+    }
+
+    #valor-calculado:before {
+      
+      font-size: 40px;
+      font-weight: bold;
+      display: block;
+      text-transform: uppercase;
+    }
+
+    #valor-calculado sup {
+      font-size: 20px;
+      top: -18px;
+    }
+
+    #valor-calculado small {
+      font-size: 20px;
+      font-weight: bold;
+      display: block;
+    }
