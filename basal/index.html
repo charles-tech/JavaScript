@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculo de Consumo de Calorias</title>
+    <link rel="stylesheet" href="estilo.css">
+    <body>
+      <header>
+        <h1>Calculo de Calorias</h1>
+      </header>
+      <section>
+        <div>
+          <p>
+            Informe seu Peso:
+            <input type="number" name="txtpeso" id="txtpeso" min="0">
+          </p>
+          <p> Informe a sua Altura:
+            <input type="number" name="txtaltura" id="txtaltura" min="0">
+          </p>
+          <p> Informe a sua Idade:
+            <input type="number" name="txtidade" id="txtidade" min="0">
+
+          </p>
+
+          <p>Sexo:
+            <input type="radio" name="radsex" id="masc" checked>
+            <label for="masc">Masculino</label>
+            <input type="radio" name="radsex" id="fem">
+            <label for="fem">Femenino</label>
+          </p>
+          <p>Exercicios:
+            <input type="radio" name="radexe" id="nada" checked>
+            <label for="masc">Nada</label>
+            <input type="radio" name="radexe" id="mode" checked>
+            <label for="fem">Moderado</label>
+            <input type="radio" name="radexe" id="supre" checked>
+            <label for="fem">Supremo</label>
+          </p>
+
+          <p>
+            <input type="button" value="Calcular" onclick="calcular()"></p>
+        
+        <div>
+          <div id="res">
+            Preencha os dados  acima  para  ver  o resultado!
+          </div>
+          <div id="imc"></div>
+          
+          <div>
+            <img id="imagem">
+          </div>
+        
+      </section>
+      <footer>
+        <p>&copy;Estudos Charles</p>
+      </footer>
+      <script src="calculo.js"></script>
+    </body>
+    
+  
+</head>
+
+</html>
